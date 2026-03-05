@@ -1,0 +1,6 @@
+import math
+s = float(input("nhập diện tích s: "))
+r = math.sqrt(s / (4 * math.pi))
+v = 4/3 * math.pi * r**3
+print("bán kính r =", r)
+print("thể tích v =", v)
