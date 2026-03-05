@@ -1,0 +1,13 @@
+import math 
+xc =float(input("nhập toạ độ xc: "))
+yc =float(input("nhập toạ độ yc: "))
+r =float(input("nhập bán kính đưởng tròn r: "))
+xm =float(input("nhập toạ độ xm: "))
+ym =float(input("nhập toạ độ ym: "))
+d =math.sqrt((xm -xc)**2 + (ym -yc)**2)
+if d < r:
+    print("m nằm trong đường tròn")
+elif d == r:
+    print("m nằm trên đường tròn")
+else:
+    print("m nằm ngoài đường tròn")
