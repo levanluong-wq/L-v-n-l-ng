@@ -1,0 +1,7 @@
+import math 
+xa =float(input("nhập toạ độ xa: "))
+ya =float(input("nhập toạ độ ya: "))
+xb =float(input("nhập toạ độ xb: "))
+yb =float(input("nhập toạ độ yb: "))
+ab = math.sqrt((xb-xa)**2 + (yb-ya)**2)
+print("đoạn thẳng ab=",ab)
