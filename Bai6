@@ -1,0 +1,10 @@
+a= int(input("nhập a: "))
+b= int(input("nhập b: "))
+c=int(input("nhập c: "))
+if a > b:
+    a, b = b, a 
+if a >c :
+    a, c = c, a 
+if b > c:
+    b, c = c, b 
+print("tăng dần:", a, b, c)
