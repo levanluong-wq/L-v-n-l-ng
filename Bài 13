@@ -1,0 +1,11 @@
+d,m,y = map(int,input("Nhap ngay thang nam: ").split())
+
+a = (14 - m)//12
+y1 = y - a
+m1 = m + 12*a - 2
+
+day = (d + y1 + y1//4 - y1//100 + y1//400 + (31*m1)//12) % 7
+
+thu = ["Chu Nhat","Thu 2","Thu 3","Thu 4","Thu 5","Thu 6","Thu 7"]
+
+print("Thu:", thu[day])
