@@ -1,0 +1,17 @@
+def dientich(x1,y1,x2,y2,x3,y3):
+    return abs(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)) / 2
+xa, ya = map(float, input("Nhap A: ").split())
+xb, yb = map(float, input("Nhap B: ").split())
+xc, yc = map(float, input("Nhap C: ").split())
+xm, ym = map(float, input("Nhap M: ").split())
+S  = dientich(xa,ya,xb,yb,xc,yc)
+S1 = dientich(xm,ym,xb,yb,xc,yc)
+S2 = dientich(xa,ya,xm,ym,xc,yc)
+S3 = dientich(xa,ya,xb,yb,xm,ym)
+if S1 + S2 + S3 == S:
+    if S1 == 0 or S2 == 0 or S3 == 0:
+        print("M nam tren canh tam giac ABC")
+    else:
+        print("M nam trong tam giac ABC")
+else:
+    print("M nam ngoai tam giac ABC")
