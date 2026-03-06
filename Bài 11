@@ -1,0 +1,21 @@
+import random
+
+human = computer = 0
+
+while True:
+    x = input("Nhap ky tu (b-d-k), ky tu khac de thoat: ")
+    
+    if x not in ['b','d','k']:
+        break
+
+    comp = random.choice(['b','d','k'])
+    print("Computer:", comp)
+
+    if x == comp:
+        pass
+    elif (x=='b' and comp=='d') or (x=='d' and comp=='k') or (x=='k' and comp=='b'):
+        human += 1
+    else:
+        computer += 1
+
+    print("Ty so human - computer:", human, "-", computer)
