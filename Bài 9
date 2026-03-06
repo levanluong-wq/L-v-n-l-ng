@@ -1,0 +1,7 @@
+import math
+x = int(input("Nhap so do goc (phut): "))
+x_mod = x % 21600      # 360° = 21600 phút
+goc_vuong = x_mod // 5400 + 1   # 90° = 5400 phút
+rad = x * math.pi / 10800   # đổi phút -> radian
+print("x thuoc goc vuong thu", int(goc_vuong))
+print("cos(x) =", math.cos(rad))
